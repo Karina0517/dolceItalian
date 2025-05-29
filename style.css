@@ -1,6 +1,6 @@
 :root{
     --main-color: #cf1b2a;
-    --second-color: #ec303f;
+    --second-color: #f3bc9d;
     --font-color: #eceaea;
     --second-font-color: #1b1a1a;
     --background-color: #c9c7c7;
@@ -28,6 +28,7 @@ main {
     flex-direction: row;
     padding: 20px;
     align-items: center;
+    background-color: var(--second-color);
 }
 
 main a{
@@ -48,6 +49,7 @@ main a:hover{
     display: flex; 
     flex-direction: column; 
     width: 50%; 
+    margin-right: 5px;
 }
 
 .points, .balance, .orders, .deliver {
@@ -81,7 +83,7 @@ main a:hover{
 }
 
 .producto {
-    border: 1px solid #ddd;
+    border: 1px solid var(--main-color);
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
@@ -92,6 +94,14 @@ main a:hover{
 .producto img {
     max-width: 100%;
     height: auto;
+}
+
+.price{
+    border-radius: 5px;
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--font-color);
+    padding: 5px;
 }
 
 nav {
